@@ -1,0 +1,95 @@
+body {
+    
+    background: linear-gradient(135deg, #000000, #4CAF50, #808080); /* Black, Green, and Grey */
+    background-size: 300% 300%; /* Make the gradient more dynamic */
+    animation: gradientAnimation 10s ease infinite; /* Animation for smooth gradient movement */
+    font-family: 'Arial', sans-serif;
+    color: white; /* Set text color to white for contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+h1 {
+    color: #FF0000;
+    font-size: 3rem;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Spotify embed styling */
+.spotify-embed {
+    margin-top: 20px;
+}
+/* Typing effect */
+.typing-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid rgba(255, 255, 255, 0.75);
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
